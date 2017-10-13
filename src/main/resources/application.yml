@@ -1,0 +1,16 @@
+spring:
+  application:
+     name: ws_mkifolio_hateoas_route
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=Route;sendStringParametersAsUnicode=true;integratedSecurity=true;
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServer2012Dialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate: show-sql
+      use_sql_comments: true
+      format_sql: true
+server:
+  context-path: /mkfolio_routeservice
